@@ -22,7 +22,6 @@ body{
 .navBar div {
     padding: 0 30px;
     font-size: 40px;
-    
 }
 
 .navBarLeft {
@@ -71,8 +70,7 @@ fieldset {
     padding: 0px;              
     align-items: center;
     margin: 0 200px 150px 200px;
-    background: 
-    radial-gradient(circle at 10% 30%, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.8) 60%);
+    background: radial-gradient(circle at 10% 30%, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.8) 60%);
     background-size: cover;
 }
 
@@ -95,6 +93,7 @@ legend span {
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
     padding: 50px;
+    align-items: center;
 }
 
 /* img in content top */
@@ -104,6 +103,7 @@ legend span {
     display: block; 
     border-radius: 10px;
     max-height: 100%;
+    
 }
 
 /* txt in top */
@@ -124,49 +124,61 @@ legend span {
 @media screen and (max-width : 1300px){
 
     .navBar {
-        margin: 0 0 150px 0;
+        margin: 0 0 100px 0;
+        height: 35px;
     }
+
+    .navBar div {
+        font-size: 25px;
+    }
+
+    .navBarRight {
+        display: flex;
+        align-items: center;
+    }
+
 
     /* imd above txt in content top */
     .contentInATop{
-        grid-template-rows: 1fr 0.5fr;
         grid-template-columns: 1fr;
         padding: 10px;
     }
 
     /* txt in content top */
     .contentInATop p {
-        margin: 5px 0 0 0;
-        font-size: 25px;
+        margin: 25px 0 ;
+        font-size: 20px;
     }
 
     /* content top */
     fieldset {
-        margin: 0 5px 50px 5px;
+        margin: 0 10px 100px 10px;
     }
 
     /* hightlight word in text */
     .contentInATop p span{
-        font-size: 30px;
+        font-size: 24px;
     }
 
     /* title 1 */
     h1 {
-        font-size: 35px;
+        font-size: 30px;
+        margin-bottom: 100px;
+        margin-top: 0
     }
 
     h1 span {
-        font-size: 45px;
+        font-size: 35px;
     }
 
     /* title content top */
     legend {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     /* wirtten "TOP" */
     legend span {
-        font-size: 35px;
+        font-size: 30px;
     }
      
 }
