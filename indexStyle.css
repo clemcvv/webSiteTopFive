@@ -1,0 +1,168 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.navBar {
+    background-color: rgb(250, 250, 250);
+    padding: 10px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-between; 
+    height: 60px; 
+    margin: 0 200px 150px 200px;
+}
+
+.navBar div {
+    padding: 0 30px;
+    font-size: 40px;
+    
+}
+
+.navBarLeft {
+    height: 100%;   
+}
+
+
+.navBarLeft a svg {
+    display: flex;
+    align-items: center; 
+    height: 100%;
+    padding: 0 15px; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navBarLeft a:hover {
+    background-color: red; /* Le hover prend maintenant toute la hauteur */
+}
+
+.navBarRight p {
+
+    margin: 0;
+    padding: 10px 0;
+ 
+    font-style: italic;
+}
+
+
+
+/* title */
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(129, 18, 18);
+    margin-bottom: 200px;
+}
+
+h1 span {
+    font-size: 70px;
+}
+
+/* Content top */
+fieldset {
+    border: 5px solid #dce9dc00; 
+    border-radius: 20px;       
+    padding: 0px;              
+    align-items: center;
+    margin: 0 200px 150px 200px;
+    background: 
+    radial-gradient(circle at 10% 30%, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.8) 60%);
+    background-size: cover;
+}
+
+/* title top */
+legend{
+    padding-left: 25px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* wirtten "TOP" */
+legend span {
+    font-size: 60px;
+}
+
+/* img and txt in content top */
+.contentInATop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    padding: 50px;
+}
+
+/* img in content top */
+.contentInATop img{
+    max-width: 100%;  /* Limite la largeur maximale à 100% du conteneur parent */
+    height: auto;     /* Ajuste automatiquement la hauteur pour préserver les proportions */
+    display: block; 
+    border-radius: 10px;
+    max-height: 100%;
+}
+
+/* txt in top */
+.contentInATop p {
+    margin: 25px 50px 25px 50px;
+    font-size: 30px;
+    text-align: justify;
+    max-width: 100%;
+}
+
+/* highlight word in txt */
+.contentInATop p span{
+    font-size: 40px;
+}
+
+
+/* Responsive */
+@media screen and (max-width : 1300px){
+
+    .navBar {
+        margin: 0 0 150px 0;
+    }
+
+    /* imd above txt in content top */
+    .contentInATop{
+        grid-template-rows: 1fr 0.5fr;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    /* txt in content top */
+    .contentInATop p {
+        margin: 5px 0 0 0;
+        font-size: 25px;
+    }
+
+    /* content top */
+    fieldset {
+        margin: 0 5px 50px 5px;
+    }
+
+    /* hightlight word in text */
+    .contentInATop p span{
+        font-size: 30px;
+    }
+
+    /* title 1 */
+    h1 {
+        font-size: 45px;
+    }
+
+    /* title content top */
+    legend {
+        font-size: 35px;
+    }
+
+    /* wirtten "TOP" */
+    legend span {
+        font-size: 50px;
+    }
+     
+}
