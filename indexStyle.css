@@ -47,7 +47,6 @@ body{
 
     margin: 0;
     padding: 10px 0;
- 
     font-style: italic;
 }
 
@@ -79,6 +78,7 @@ fieldset {
 
 /* title top */
 legend{
+    text-align: justify;
     padding-left: 25px;
     font-size: 45px;
     font-weight: bold;
@@ -152,17 +152,21 @@ legend span {
 
     /* title 1 */
     h1 {
+        font-size: 35px;
+    }
+
+    h1 span {
         font-size: 45px;
     }
 
     /* title content top */
     legend {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     /* wirtten "TOP" */
     legend span {
-        font-size: 50px;
+        font-size: 35px;
     }
      
 }
