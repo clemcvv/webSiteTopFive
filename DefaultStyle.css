@@ -78,20 +78,24 @@ legend{
 .contentInATop{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
     padding: 50px;
 
 }
 
 .contentInATop img{
-    max-height: 400px;
-    max-width: 100%;
+    max-width: 100%;  /* Limite la largeur maximale à 100% du conteneur parent */
+    height: auto;     /* Ajuste automatiquement la hauteur pour préserver les proportions */
+    display: block; 
     border-radius: 10px;
+    max-height: 100%;
 }
 
 .contentInATop p {
     margin: 25px 50px 25px 50px;
     font-size: 25px;
     text-align: justify;
+    max-width: 100%;
 }
 
 .contentInATop p span{
@@ -108,12 +112,17 @@ legend{
     .contentInATop{
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
+        padding: 10px;
     }
 
-    .contentImgTop{
-        display: flex;
-        justify-content: center;
+    .contentInATop p {
+        margin: 20px 0 0 0;
     }
+
+    fieldset {
+        margin-bottom: 50px;
+    }
+    
     
     
 }
