@@ -20,12 +20,13 @@ body{
 }
 
 .navBar div {
-    padding: 0 30px;
+    padding: 0 15px;
     font-size: 40px;
 }
 
 .navBarLeft {
-    height: 100%;   
+    height: 100%;  
+    padding: 0; 
 }
 
 
@@ -33,7 +34,7 @@ body{
     display: flex;
     align-items: center; 
     height: 100%;
-    padding: 0 15px; 
+    padding: 0; 
     border-radius: 5px;
     cursor: pointer;
 }
@@ -120,6 +121,79 @@ legend span {
 }
 
 
+
+/* footer */
+
+#instagramIcon {
+    grid-area: ii;   
+}
+
+.socialMedia {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    padding: 5px 0 ;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.socialMedia a:hover {
+    border-bottom: solid 1px black;
+}
+
+
+#gitIcon {
+    grid-area: gi;
+}
+
+#footerSupport {
+    grid-area: fs;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#footerSupport a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+#footerSupport a:hover{
+    border-bottom: solid 8px transparent;
+}
+
+
+#footerCopyright {
+    grid-area: fc;
+}
+
+footer p {
+    text-align: center;
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-areas:    "fs ii"
+                            "fs gi"
+                            "fc fc";
+    background-color: rgb(243, 243, 243);
+}
+
+.footerContainer div svg {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
 /* Responsive */
 @media screen and (max-width : 1300px){
 
@@ -130,7 +204,9 @@ legend span {
 
     .navBar div {
         font-size: 25px;
+        padding: 0 5px;
     }
+
 
     .navBarRight {
         display: flex;
