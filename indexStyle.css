@@ -256,5 +256,23 @@ footer p {
     legend span {
         font-size: 30px;
     }
-     
+
+
+
+    .footerContainer div svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    #footerSupport a {
+        font-size: 18px;
+    }
+
+    .socialMedia a {
+        font-size: 15px;
+    }
+
+    .footerContainer p {
+        font-size: 15px;
+    }
 }
