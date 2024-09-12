@@ -10,9 +10,9 @@ var IdForDoubleButtonMenuLeft = 0;
 
 function openCloseLeftBar() {
     if (IdForDoubleButtonMenuLeft % 2 == 0) {
-        document.getElementById("menuSomeTop").className="closeBarLeft";
-    } else {
         document.getElementById("menuSomeTop").className="openBarLeft";
+    } else {
+        document.getElementById("menuSomeTop").className="closeBarLeft";
     }
     IdForDoubleButtonMenuLeft += 1;
 }
