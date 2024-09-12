@@ -11,19 +11,31 @@
 <body>
 
     <header class="navBar">
-        <div class="navBarLeft">
-            <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                    <path fill="none" stroke="#1f212b" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M35.981,15.014	c0,0-3.562,0.133-4.997,3.989c-0.782,2.1-4.387,11.477-6.012,15.617c-1.528-3.972-5.171-13.496-6.009-15.617	c-1.535-3.884-4.976-3.989-4.976-3.989l-13.024-0.04l0.04,1.023c0,0,1.585,0.092,2.91,0.602c1.442,0.555,2.047,1.866,2.488,2.83	c0.526,1.147,6.457,15.984,6.818,17.04c0.757,2.212,2.532,3.53,4.76,3.53c1.116,0,12.484,0,13.832,0c1.712,0,3.7-1.035,4.914-3.53	c0.487-1,6.321-15.978,6.847-17.125c0.442-0.964,1.098-2.28,2.54-2.835c1.325-0.51,2.871-0.531,2.871-0.531v-0.983L35.981,15.014z"></path><path fill="none" stroke="#1f212b" stroke-miterlimit="10" stroke-width="2" d="M24.991,33.984	c-0.321,2.809-3.238,5.325-5.994,6.02"></path><path fill="none" stroke="#1f212b" stroke-miterlimit="10" stroke-width="2" d="M24.997,33.984c0.321,2.809,3.238,5.325,5.994,6.02"></path>
-                    </svg>
-                </a>
+
+        <div onclick="openCloseLeftBar()" class="navBarLeft">
+        
+            <svg  class="logoOnNavBar" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="auto" height="auto" viewBox="0 0 24 24">
+                <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path>
+            </svg>
+            
         </div>
+
         <div class="navBarRight">
-            <p>TopV</p>
+
+            <a href="index.html">
+                <svg class="logoOnNavBar" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                    <path fill="none" stroke="#1f212b" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M35.981,15.014	c0,0-3.562,0.133-4.997,3.989c-0.782,2.1-4.387,11.477-6.012,15.617c-1.528-3.972-5.171-13.496-6.009-15.617	c-1.535-3.884-4.976-3.989-4.976-3.989l-13.024-0.04l0.04,1.023c0,0,1.585,0.092,2.91,0.602c1.442,0.555,2.047,1.866,2.488,2.83	c0.526,1.147,6.457,15.984,6.818,17.04c0.757,2.212,2.532,3.53,4.76,3.53c1.116,0,12.484,0,13.832,0c1.712,0,3.7-1.035,4.914-3.53	c0.487-1,6.321-15.978,6.847-17.125c0.442-0.964,1.098-2.28,2.54-2.835c1.325-0.51,2.871-0.531,2.871-0.531v-0.983L35.981,15.014z"></path><path fill="none" stroke="#1f212b" stroke-miterlimit="10" stroke-width="2" d="M24.991,33.984	c-0.321,2.809-3.238,5.325-5.994,6.02"></path><path fill="none" stroke="#1f212b" stroke-miterlimit="10" stroke-width="2" d="M24.997,33.984c0.321,2.809,3.238,5.325,5.994,6.02"></path>
+                </svg>
+            </a>
         </div>
+
     </header>
 
     <h1><span>TOP V</span> Formula 1 crash of the 21st century</h1>
+
+    <div id="menuSomeTop" class="closeBarLeft">
+
+    </div>
 
     <div>
 
@@ -94,6 +106,8 @@
         <p id="footerCopyright">© 2024 TopV. All rights reserved.</p>
 
     </footer>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

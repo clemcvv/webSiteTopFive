@@ -8,7 +8,28 @@ body{
 }
 
 
+#menuSomeTop{
+    z-index: 5;
+    background-color: black;
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    transition: 1s;
+}
+
+.closeBarLeft {
+    left: -300px;
+}
+
+.openBarLeft {
+    left: 0px;
+}
+
 .navBar {
+    z-index: 10;
+    position: relative;
     background-color: rgb(250, 250, 250);
     padding: 10px 0;
     border-bottom-left-radius: 10px;
@@ -24,13 +45,8 @@ body{
     font-size: 40px;
 }
 
-.navBarLeft {
-    height: 100%;  
-    padding: 0; 
-}
 
-
-.navBarLeft a svg {
+.logoOnNavBar {
     display: flex;
     align-items: center; 
     height: 100%;
@@ -39,16 +55,7 @@ body{
     cursor: pointer;
 }
 
-.navBarLeft a:hover {
-    background-color: red; /* Le hover prend maintenant toute la hauteur */
-}
 
-.navBarRight p {
-
-    margin: 0;
-    padding: 10px 0;
-    font-style: italic;
-}
 
 
 
@@ -207,11 +214,6 @@ footer p {
         padding: 0 5px;
     }
 
-
-    .navBarRight {
-        display: flex;
-        align-items: center;
-    }
 
 
     /* imd above txt in content top */
