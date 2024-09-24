@@ -1,0 +1,130 @@
+body {
+    background-color: #55748a;
+    margin: 0;
+}
+
+.TopOfDaySomeTopContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    gap: 50px;
+}
+
+.TopOfDayContainer h2 { grid-area: h2;}
+.TopOfDayContainer h3 { grid-area: h3;}
+.SomeTopContainer img { grid-area: im;}
+
+.TopOfDayContainer {
+    padding: 0 0px;
+    display: grid;
+    grid-template-areas:"h2"
+                        "h3"
+                        "im";
+    grid-template-rows: 0.1fr 0.1fr 1fr;
+
+}
+
+.TopOfDayContainer h2 {
+    font-size: 40px;
+    margin: 20px 0;
+    font-family: 'Bebas Neue', cursive;
+    color: #2d3f4c;
+}
+
+.TopOfDayContainer h3 {
+    font-size: 30px;
+    margin: 0 0 10px;
+    text-align: left;
+    padding-left: 40px;
+    color: #0e1418;
+    border-left: 4px #2d3f4c solid;
+    font-family: 'Montserrat', monospace;
+}
+
+.TopOfDayContainer img{
+    width: 100%;
+}
+
+.SomeTopContainer hr {grid-area: hr;}
+.SomeTopContainer h2 {grid-area: h2;}
+.SomeTopContainer ol {grid-area: ol;}
+
+.SomeTopContainer {
+    display: grid;
+    grid-template-areas:"h2 h2 h2"
+                        "ol ol hr"
+                        "ol ol hr";
+    grid-template-columns: 1fr 1fr 0.2fr;
+    grid-template-rows: 0.1fr 1fr;
+
+}
+
+.SomeTopContainer hr {
+    height: 100%;
+    margin: 0 auto;
+    border-color: #2d3f4c;
+    border-left-width: 2px;
+    border-bottom:  0px;
+    border-style: solid;
+    align-self: end;
+}
+
+.SomeTopContainer h2 {
+    font-size: 40px;
+    margin: 10px 0;
+    text-align: left;
+    font-family: 'Bebas Neue', cursive;
+    color: #2d3f4c;
+}
+
+.SomeTopContainer ol {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: decimal;
+    counter-reset: li-counter 1; /* Initialise un compteur */
+}
+
+.SomeTopContainer ol li {
+    align-items: flex-start;
+    display: flex;
+    max-width: 100%;
+    align-items: center;  
+    position: relative;
+    padding-left: 20px;
+    height: 100%;
+}
+
+.SomeTopContainer ol li::before {
+    content: "0"counter(li-counter); /* Affiche le compteur suivi d'un point */
+    counter-increment: li-counter; /* Incrémente le compteur */
+    position: absolute;
+    left: 0; /* Place le numéro à gauche */
+    font-size: 80px;
+    color: #2d3f4c;
+    font-family: 'Bungee', cursive;
+    opacity: 0.4;
+}
+
+.SomeTopContainer ol li:hover {
+    border-left: #2d3f4c 4px solid;
+}
+
+
+.SomeTopContainer ol li a {
+    align-self: flex-end;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: justify;
+    color: #0e1418;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+

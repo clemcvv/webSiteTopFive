@@ -1,0 +1,469 @@
+body {
+    background-color: #55748a;
+    margin: 0;
+}
+
+
+
+#menuSomeTop{
+    z-index: 5;
+    background-color: black;
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    transition: 1s;
+}
+
+.closeBarLeft {
+    left: -300px;
+}
+
+.openBarLeft {
+    left: 0px;
+}
+
+
+
+
+
+/* ----------------header ------------------- */
+
+
+
+.navBar {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between; 
+    height: 60px; 
+
+}
+
+.navBar div {
+    padding: 0 15px;
+    font-size: 40px;
+}
+
+
+.logoOnNavBar {
+    display: flex;
+    align-items: center; 
+    height: 100%;
+    padding: 0; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contentHeader {
+    position: relative; /* tout les position absolute se refere à cette div */
+}
+
+/* title h1 container */
+.title {
+    position: absolute;
+    width: 90%;
+    /* Centre verticalement à 30%, horizontalement à 50% */
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bungee', cursive;
+}
+
+/* title h1 */
+.title h1 {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-align: center;
+}
+
+/* main img in header */
+.mainImg {
+    width: 100%;
+}
+
+/* Div vide, Degrader du bas vers le haut, couleur du body pour le lien*/
+.degrader {
+    content: "";
+    position: absolute;
+    width: 100%;
+    /* dégrader bas sur 400px de la main img */
+    height: 400px;
+    background: linear-gradient(to bottom, transparent, #55748a);
+    bottom: 0;
+}
+
+/* ----------------Containers TOP------------------- */
+
+#imgtop {grid-area: im;}
+#containerData {grid-area: cd}
+
+.barLeftText {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 30px;
+    width: 2px;
+    height: 45%;
+    background-color: #405768;
+}
+
+
+/* img and txt in container top */
+.containerGridTop{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    column-gap: 150px;
+    row-gap: 50px;
+    margin:0 15%;
+    margin-bottom: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.gridImgLeft {
+    grid-template-areas: "im cd";
+}
+
+.gridImgRight {
+    grid-template-areas: "cd im";
+}
+
+/* img in content top */
+.containerGridTop img{
+    max-width: 100%;  /* Limite la largeur maximale à 100% du conteneur parent */
+    height: auto;     /* Ajuste automatiquement la hauteur pour préserver les proportions */ 
+    max-height: 100%;
+    display: block;
+    
+    
+}
+/* container text to postion number absolute */
+.containterTextTop {
+    position: relative;
+}
+
+/* title & description */
+.informationTop {
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+/* description */
+.informationTop p {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+}
+
+.informationTop h2 {
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    color: #2d3f4c;
+}
+
+/* container number */
+.numeroTop {
+    position: absolute;
+    top:0;
+    opacity: 0.1;
+}
+
+/* text number */
+.numeroTop p {
+    margin: 0;
+    font-size: 100px;
+    font-family: 'Bungee', cursive;
+}
+
+
+
+
+
+
+/* footer */
+
+#instagramIcon {
+    grid-area: ii;   
+}
+
+.socialMedia {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    padding: 5px 0 ;
+    margin-left: 25%;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.socialMedia a:hover {
+    border-bottom: solid 1px black;
+}
+
+
+#gitIcon {
+    grid-area: gi;
+}
+
+#footerSupport {
+    grid-area: fs;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+#footerSupport a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#footerSupport a:hover{
+    border-bottom: solid 8px transparent; 
+}
+
+
+#footerCopyright {
+    grid-area: fc;
+    font-family: 'Bebas Neue', cursive;
+}
+
+footer p {
+    text-align: center;
+
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-areas:    "fs ii"
+                            "fs gi"
+                            "fc fc";
+    background-color: #95a9b8;
+    margin-top: 50px;
+}
+
+.footerContainer div svg {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width : 1440px){
+
+    .degrader {
+        height: 200px;
+    }
+
+    .containerGridTop {
+        column-gap: 75px;
+        row-gap: 20px;
+        align-items: end;
+   }
+
+
+   .title h1 {
+    font-size: 40px;  
+  }
+}
+
+
+/* Responsive */
+@media screen and (max-width : 1024px){
+
+
+
+    .navBar {
+     height: 40px; 
+    }
+
+
+
+
+    .barLeftTextAndImg {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 15px;
+        width: 2px;
+        height: 85%;
+        background-color: #405768;
+    }
+
+    .containerGridTop {
+        grid-template-areas:"cd"
+                            "im";
+    }
+
+    .barLeftText {
+        width: 0;
+    }
+
+    .title h1 {
+        font-size: 26px;  
+      }
+
+    .containerGridTop {
+         grid-template-columns: 1fr;
+         gap: 10px;
+    }
+
+    .containerGridTop img{ 
+        width: 90%;
+        justify-self: right;
+    }
+
+    .informationTop {
+        margin-top: 45px;
+        margin-left: 30px;
+    }
+
+    .numeroTop p {
+        font-size: 50px;
+    }
+
+    .informationTop p {
+        font-size: 16px;
+    }
+
+    .informationTop h2 {
+        font-size: 20px;
+    }
+
+
+
+
+    .footerContainer div svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    #footerSupport a {
+        font-size: 18px;
+    }
+
+    .socialMedia a {
+        font-size: 15px;
+    }
+
+    #footerCopyright{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width : 768px){
+
+
+    .navBar {
+        height: 26px; 
+       }
+
+
+
+    .title h1 {
+        margin-top: 80px;
+        font-size: 20px;  
+    }
+
+    .informationTop p {
+        font-size: 12px;
+    }
+
+    .informationTop h2 {
+        font-size: 16px;
+    }
+
+    .footerContainer {
+        margin-top: 40px;
+        grid-template-areas:    "fs gi"
+                                "fs ii"
+                                "fc fc";
+    }
+
+    #instagramIcon {
+        margin: auto;
+    }
+
+    #gitIcon {
+        margin: auto;
+    }
+
+    #footerSupport a {
+        font-size: 13px;
+    }
+
+    .socialMedia a {
+        font-size: 13px;
+    }
+
+    #footerCopyright{
+        font-size: 11px;
+    }
+
+    #footerSupport {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #footerSupport a:hover{
+        border-left: solid 8px transparent; 
+        border-bottom: none;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
