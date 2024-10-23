@@ -1,6 +1,7 @@
 // Fonctions pour la gestion des contenus dynamiques
 
 const concat = (a, b) => a + ' ' + b;
+let test = 0;
 
 function createTopHeader(header) {
     return`
